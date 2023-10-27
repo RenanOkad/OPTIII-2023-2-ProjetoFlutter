@@ -6,12 +6,14 @@ double result = 0;
 List<double> payments = [];
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: SplashScreen(),
   ));
 }
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
